@@ -1,0 +1,11 @@
+# Visual Studio
+.vs/
+
+# CMake / builds
+out/
+build/
+
+# Archivos temporales
+*.user
+*.log
+*.tmp
