@@ -110,7 +110,7 @@
           "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}"
         }
       }
-    }
+    },
     {
       "name": "vs2026-learning-debug",
       "displayName": "VS 2026 Learning (x64 Debug)",
