@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	int valor = 42;
+	int valor = 43;
 	cout << "Hello CMake." << endl;
 	//getchar();
 	return 0;
