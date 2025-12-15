@@ -1,5 +1,5 @@
 ﻿{
-    "version": 3,
+  "version": 3,
   "configurePresets": [
     {
       "name": "windows-base",
@@ -114,11 +114,17 @@
     {
       "name": "vs2026-learning-debug",
       "displayName": "VS 2026 Learning (x64 Debug)",
-      "description": "Preset explícito para aprendizaje controlado con Visual Studio 2026",
-      "inherits": "x64-debug",
-      "cacheVariables": {
-        "CMAKE_CXX_STANDARD": "20"
-      }
+      "description": "Preset educativo pensado para VS 2026+. En VS 2022 se hereda pero no es seleccionable ni aplica cacheVariables propias.",
+      "inherits": "x64-debug"
     }
+    //{
+    //  "name": "vs2026-learning-debug",
+    //  "displayName": "VS 2026 Learning (x64 Debug)",
+    //  "description": "Preset explícito para aprendizaje controlado con Visual Studio 2026",
+    //  "inherits": "x64-debug",
+    //  "cacheVariables": {
+    //    "CMAKE_CXX_STANDARD": "20"
+    //  }
+    //}
   ]
 }
