@@ -77,25 +77,34 @@
                 }
             }
         },
-        {
-            "name": "macos-debug",
-            "displayName": "macOS Debug",
-            "generator": "Ninja",
-            "binaryDir": "${sourceDir}/out/build/${presetName}",
-            "installDir": "${sourceDir}/out/install/${presetName}",
-            "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
-            },
-            "condition": {
-                "type": "equals",
-                "lhs": "${hostSystemName}",
-                "rhs": "Darwin"
-            },
-            "vendor": {
-                "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
-                    "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}"
-                }
-            }
+      {
+        "name": "macos-debug",
+        "displayName": "macOS Debug",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/out/build/${presetName}",
+        "installDir": "${sourceDir}/out/install/${presetName}",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug"
+        },
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Darwin"
+        },
+        "vendor": {
+          "microsoft.com/VisualStudioRemoteSettings/CMake/1.0": {
+            "sourceDir": "$env{HOME}/.vs/$ms{projectDirName}"
+          }
         }
+      }
+      {
+        "name": "vs2026-learning-debug",
+        "displayName": "VS 2026 Learning (x64 Debug)",
+        "description": "Preset explícito para aprendizaje controlado con Visual Studio 2026",
+        "inherits": "x64-debug",
+        "cacheVariables": {
+          "CMAKE_CXX_STANDARD": "20"
+        }
+      }
     ]
 }
